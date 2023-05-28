@@ -34,14 +34,14 @@ No final, nosso programa deve exibir uma mensagem para o usuário, caso ele tenh
 ou então apenas deve printar o CPF correto já só com número.
 """
 
-# cpf = input('Digite seu cpf(apenas números): ')
+cpf = input('Digite seu cpf(apenas números): ')
 
-# if len(cpf) > 15 or len(cpf) < 11:
-#     print('Digite seu CPF corretamente e digite apenas números')
-# else:
-#     cpf = cpf.replace('.','' )
-#     cpf = cpf.replace('-','' )
-#     print(f'Cpf cadastrado com sucesso {cpf}') 
+if len(cpf) > 15 or len(cpf) < 11:
+    print('Digite seu CPF corretamente e digite apenas números')
+else:
+    cpf = cpf.replace('.','' )
+    cpf = cpf.replace('-','' )
+    print(f'Cpf cadastrado com sucesso {cpf}') 
 
 
 """## 3. Cadastro de e-mails
