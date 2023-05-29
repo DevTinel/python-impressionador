@@ -36,12 +36,13 @@ ou então apenas deve printar o CPF correto já só com número.
 
 cpf = input('Digite seu cpf(apenas números): ')
 
-if len(cpf) > 15 or len(cpf) < 11:
-    print('Digite seu CPF corretamente e digite apenas números')
-else:
-    cpf = cpf.replace('.','' )
-    cpf = cpf.replace('-','' )
+cpf = cpf.replace('.','' )
+cpf = cpf.replace('-','' )
+cpf = cpf.strip()
+if len(cpf) == 11 and cpf.isnumeric():
     print(f'Cpf cadastrado com sucesso {cpf}') 
+else:
+    print('Digite seu CPF corretamente e digite apenas números')
 
 
 """## 3. Cadastro de e-mails
